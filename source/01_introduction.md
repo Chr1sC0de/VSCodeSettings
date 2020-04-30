@@ -16,4 +16,4 @@ Settings in visual studio code can be opened via the dropdown menu, File->Prefer
 
 VSCode [extensions](https://code.visualstudio.com/docs/editor/extension-gallery) can be installed from the marketplace tab,
 
-![alt text| ,10%](../image/introduction/extensions_marketplace.png "extensions tab")
+![very good|200x50, 20%](../image/introduction/extensions_marketplace.png)
