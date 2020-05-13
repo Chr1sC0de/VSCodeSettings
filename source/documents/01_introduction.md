@@ -12,16 +12,16 @@ VSCode can be downloaded directly from [here](https://code.visualstudio.com/).
 
 Settings in VSCode can be opened via the dropdown menu, File->Preferences->Settings, or via the following shortcut `Ctrl+,`. Settings can be opened within two modes, either in UI mode,
 
-![Settings (UI)](D:\Github\VSCodeQualityOfLife\image\introduction\settings_ui_mode.png "ui settings")
+![Settings (UI)](D:\Github\VSCodeSettings\image\introduction\settings_ui_mode.png "ui settings")
 
 or in [JSON](https://www.digitalocean.com/community/tutorials/an-introduction-to-json) mode which can can be toggled via the Open Settings button,
 
-![Settings (JSON)](D:\Github\VSCodeQualityOfLife\image\introduction\settings_json_mode.png "ui settings")
+![Settings (JSON)](D:\Github\VSCodeSettings\image\introduction\settings_json_mode.png "ui settings")
 
 ## Extensions
 
 VSCode [extensions](https://code.visualstudio.com/docs/editor/extension-gallery) can be installed from the marketplace tab,
 
-![Marketplace](D:\Github\VSCodeQualityOfLife\image\introduction\extensions_marketplace.png)
+![Marketplace](D:\Github\VSCodeSettings\image\introduction\extensions_marketplace.png)
 
 The market place tab can be quickly accessed via the `Ctrl+Shift+x` shortcut. Alternatively the marketplace can be accessed via the [web browser](https://marketplace.visualstudio.com/)
