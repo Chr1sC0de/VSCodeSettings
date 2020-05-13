@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "test pandocpower",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/tests/files.ps1",
+            "cwd": "${workspaceFolder}/source",
+            "args": []
+        },
+        {
+            "name": "PowerShell Launch Current File",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "cwd": "${workspaceFolder}/source"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug Incrementer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/source/increment.py",
+            "cwd": "${workspaceFolder}/source",
+            "args": [
+                "--start=2",
+                "--amount=-1"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
