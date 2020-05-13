@@ -1,3 +1,3 @@
-# VSCode Quality of Life
+# VSCode Settings
 
-When constantly changing work stations it may be of interest to keep track of your visual studio code settings. This markdown document will act to log the changes in settings I have made in visual studio code.
+A online document to keep track of how I setup my visual studio code
