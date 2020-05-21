@@ -17,3 +17,7 @@ NOTE: {} means is not literal and means the value of some variable.
 |           open search control           |  `Shift+Ctrl+g`  |                                                                                            |
 |              open debugging             |  `Shift+Ctrl+d`  |                                                                                            |
 |             open extensions             |  `Shift+Ctrl+x`  |                                                                                            |
+
+## Bookmarks
+
+The [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) extension in visual studio code allows use to easily navigate through files when working through code.

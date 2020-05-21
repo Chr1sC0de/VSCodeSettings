@@ -1,6 +1,6 @@
 using module "D:\Github\PandocBuilder\cm_PandocBuilder.psm1"
 
-$builder = [Compiler]::new("$PSScriptRoot/web.html")
+$builder = [Compiler]::new("$PSScriptRoot/../index.html")
 
 $source_folder = [FileFolder]::new("$PSScriptRoot/documents")
 
