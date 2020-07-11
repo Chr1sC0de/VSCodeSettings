@@ -3127,6 +3127,7 @@ h4:hover a { color: #333; } h5:hover a { color: #333; } h6:hover a { color: #333
         <li><a href="#markdown">Markdown</a></li>
         <li><a href="#cc">C/C++</a></li>
         <li><a href="#python">Python</a></li>
+        <li><a href="#remote-ssh-and-wsl">Remote SSH and WSL</a></li>
         </ul>
         </div>
       </div>
@@ -3322,6 +3323,9 @@ h4:hover a { color: #333; } h5:hover a { color: #333; } h6:hover a { color: #333
             <p>-<a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">Markdown Cheat Sheet</a></p>
             <h2 id="table-generation">Table Generation</h2>
             <p>It may become difficult to generate tables in markdown. Luckily there’s an online interactive tool which can be used to generate and format tables called the <a href="http://www.tablesgenerator.com/markdown_tables">Tables Generator</a>. Ensure to save the generator files when finished for any future changes. This can save hours of time inputting new data into a table.</p>
+            <h2 id="mermaid">Mermaid</h2>
+            <p><a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a> is a JavaScript tool which simplifies the generation of diagrams and flowcharts. It can be viewed from markdown with <a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid">Markdown Preview Mermaid Support</a> tool.</p>
+            <p>To compile the code with <a href="https://pandoc.org/">pandoc</a> into html or latex we need to install the <a href="https://github.com/timofurrer/pandoc-mermaid-filter">pandoc-mermaid-filter</a>. To get the filter running we need to install <a href="https://github.com/mermaid-js/mermaid-cli">mermaid.cli</a>.</p>
             <h1 id="cc">C/C++</h1>
             <p>The all in one visual studio code extension for <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">C/C++</a> provides a set of useful tools to making c++ coding easier.</p>
             <h2 id="cmake">CMake</h2>
@@ -3365,6 +3369,14 @@ h4:hover a { color: #333; } h5:hover a { color: #333; } h6:hover a { color: #333
             <ul>
             <li><a href="https://www.python-course.eu/index.php">Python Course</a></li>
             </ul>
+            <h1 id="remote-ssh-and-wsl">Remote SSH and WSL</h1>
+            <h2 id="remote-ssh">Remote SSH</h2>
+            <p>To remote ssh from VSCode we can install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote - SSH</a> extension. The tool is quite simple to use.</p>
+            <h2 id="remote-wsl">Remote WSL</h2>
+            <p>To run WSL from VSCode install <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote - WSL</a>.</p>
+            <p>Once installed to make things more readable we can install <a href="https://github.com/ohmybash/oh-my-bash">oh-my-bash</a>. To change the highlighting the easiest method is to use the <a href="https://geoff.greer.fm/lscolors/">LS_Colors Generator</a> by Geoff Greer.</p>
+            <p>Once your colors have been decided we set them by changing <code>LS_COLORS</code> variable in our .bashrc,</p>
+            <div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1"></a><span class="bu">export</span> <span class="va">LS_COLORS=</span><span class="st">&quot;di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=1;32;1:ow=33</span></span></code></pre></div>
             </div>
     </div>
   </div>
