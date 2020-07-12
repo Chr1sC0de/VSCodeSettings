@@ -3286,21 +3286,26 @@ h4:hover a { color: #333; } h5:hover a { color: #333; } h6:hover a { color: #333
             <p>we can use the following</p>
             <pre class="vim"><code>ys2w&quot;</code></pre>
             <p>we see this command is of the form <code>ys&lt;numwords&gt;w&lt;new&gt;</code>, and can be read as <code>yank surround &lt;numwords&gt; words with &lt;target&gt;</code></p>
+            <h2 id="vimium">Vimium</h2>
+            <p>To enhance the vim experience we can install the <a href="%22https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en%22">Vimium</a> chrome extension.</p>
+            <h2 id="easymotion">EasyMotion</h2>
+            <p>Vim has an easy motion configurations which can be enabled via</p>
+            <div class="sourceCode" id="cb11"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb11-1"><a href="#cb11-1"></a>    <span class="er">&quot;vim.easymotion&quot;:</span> <span class="er">true</span></span></code></pre></div>
             <h1 id="making-things-pretty">Making Things Pretty</h1>
             <p>To truly experience the joys of programming customizability of the editor is an absolute necessity! It is paramount to your sanity to have both an organized and good looking editor for those inevitable long nights filled with writing or coding. Also, it’s a fun way to procrastinate and still feel productive.</p>
             <h2 id="pretty-fonts">Pretty Fonts</h2>
             <p>A lot of our work is going to be within either the text editor or the terminal. A nice looking font not only improves the looks of you’re code but significantly improves readability, reducing the energy necessary for parsing, scanning and joining multiple characters.</p>
             <p>I personally recommend installing <a href="https://github.com/tonsky/FiraCode">fira code</a>. The font contains ligatures for common programming multi-character combinations and, in my personal experience, helps to significantly improve the readability of code.</p>
             <p>After following the <a href="https://github.com/tonsky/FiraCode/wiki/Installing">installation instructions</a> we can setup <code>Fira Code</code> in windows as the font for our <code>editor</code>, <code>integratedTerminal</code> and <code>debugConsole</code> by adding the following lines to our <code>settings (JSON)</code>,</p>
-            <div class="sourceCode" id="cb11"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb11-1"><a href="#cb11-1"></a>    <span class="er">&quot;editor.fontFamily&quot;:</span> <span class="er">&quot;Fira</span> <span class="er">Code&quot;,</span></span>
-            <span id="cb11-2"><a href="#cb11-2"></a>    <span class="er">&quot;editor.fontLigatures&quot;:</span> <span class="er">true,</span></span>
-            <span id="cb11-3"><a href="#cb11-3"></a>    <span class="er">&quot;terminal.integrated.fontFamily&quot;:</span> <span class="er">&quot;Fira</span> <span class="er">Code&quot;,</span></span>
-            <span id="cb11-4"><a href="#cb11-4"></a>    <span class="er">&quot;debug.console.fontFamily&quot;:</span> <span class="er">&quot;Fira</span> <span class="er">Code&quot;,</span></span></code></pre></div>
+            <div class="sourceCode" id="cb12"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb12-1"><a href="#cb12-1"></a>    <span class="er">&quot;editor.fontFamily&quot;:</span> <span class="er">&quot;Fira</span> <span class="er">Code&quot;,</span></span>
+            <span id="cb12-2"><a href="#cb12-2"></a>    <span class="er">&quot;editor.fontLigatures&quot;:</span> <span class="er">true,</span></span>
+            <span id="cb12-3"><a href="#cb12-3"></a>    <span class="er">&quot;terminal.integrated.fontFamily&quot;:</span> <span class="er">&quot;Fira</span> <span class="er">Code&quot;,</span></span>
+            <span id="cb12-4"><a href="#cb12-4"></a>    <span class="er">&quot;debug.console.fontFamily&quot;:</span> <span class="er">&quot;Fira</span> <span class="er">Code&quot;,</span></span></code></pre></div>
             <p>For more fonts check out <a href="https://www.nerdfonts.com/">Nerd Fonts</a>.</p>
             <p>For a nice guide check out <a href="https://www.youtube.com/watch?v=oHhiMf_6exY">Scott Hanselman</a></p>
             <h2 id="opacity">Opacity</h2>
             <p>Sometimes you might have a cool background that you would like to see, set the opacity of the entire editor with <a href="https://marketplace.visualstudio.com/items?itemName=s-nlf-fh.glassit">GlassIt-VSC</a>, in <code>settings (JSON)</code>,</p>
-            <div class="sourceCode" id="cb12"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb12-1"><a href="#cb12-1"></a>    <span class="er">&quot;glassit.alpha&quot;:</span> <span class="er">235</span></span></code></pre></div>
+            <div class="sourceCode" id="cb13"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb13-1"><a href="#cb13-1"></a>    <span class="er">&quot;glassit.alpha&quot;:</span> <span class="er">235</span></span></code></pre></div>
             <h2 id="coloured-brackets">Coloured Brackets</h2>
             <p>It can sometimes be difficult to discern which brackets belong to which group, for such cases <a href="https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets">Rainbow Brackets</a> is a must.</p>
             <h2 id="better-icons">Better Icons</h2>
@@ -3358,7 +3363,7 @@ h4:hover a { color: #333; } h5:hover a { color: #333; } h6:hover a { color: #333
             <h1 id="python">Python</h1>
             <p>A must have tool for VSCode python development is <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a>.</p>
             <p>Once installed for any new projects I recommend creating a new <a href="https://realpython.com/python-virtual-environments-a-primer/">virtual environment</a>.</p>
-            <div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a>python <span class="op">-</span>m venv pathToVirtualEnvironment</span></code></pre></div>
+            <div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a>python <span class="op">-</span>m venv pathToVirtualEnvironment</span></code></pre></div>
             <p>An alternative to using a virtual environment would be to use <a href="https://www.anaconda.com/">anaconda</a> or <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a></p>
             <p>When VSCode starts when you open a Python file you will automatically be prompted to select a python interpreter. If a virtual environment is installed VSCode will automatically activate it instead.</p>
             <p>To select a python interpreter manually press <code>F1</code> to open up the command line and type,</p>
@@ -3371,12 +3376,59 @@ h4:hover a { color: #333; } h5:hover a { color: #333; } h6:hover a { color: #333
             </ul>
             <h1 id="remote-ssh-and-wsl">Remote SSH and WSL</h1>
             <h2 id="remote-ssh">Remote SSH</h2>
-            <p>To remote ssh from VSCode we can install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote - SSH</a> extension. The tool is quite simple to use.</p>
+            <p>To remote SSH from VSCode we can install the</p>
+            <p><a href title="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote - SSH</a> extension. The tool is quite simple to use.</p>
+            <h2 id="public-key-authentication">Public Key Authentication</h2>
+            <p><a href="https://www.ssh.com/ssh/public-key-authentication">Public Key Authentication</a> provides a user single sign-on across SSH servers, allow automatic passwordless logins. The following script will automate log in for the Spartan super computer, taken from <a href="http://vcloud-lab.com/entries/devops/How-to-Setup-Passwordless-SSH-Login-on-Windows">Virtual Geek</a>,</p>
+            <div class="sourceCode" id="cb16"><pre class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb16-1"><a href="#cb16-1"></a><span class="kw">param</span>(</span>
+            <span id="cb16-2"><a href="#cb16-2"></a>    [<span class="dt">string</span>]<span class="va">$Computer</span>=<span class="st">&quot;spartan.hpc.unimelb.edu.au&quot;</span>,</span>
+            <span id="cb16-3"><a href="#cb16-3"></a>    [<span class="dt">string</span>]<span class="va">$User</span>=<span class="st">&quot;cmamon&quot;</span></span>
+            <span id="cb16-4"><a href="#cb16-4"></a>)</span>
+            <span id="cb16-5"><a href="#cb16-5"></a></span>
+            <span id="cb16-6"><a href="#cb16-6"></a><span class="va">$old_location</span> = <span class="fu">Get-Location</span></span>
+            <span id="cb16-7"><a href="#cb16-7"></a></span>
+            <span id="cb16-8"><a href="#cb16-8"></a><span class="fu">Set-Location</span> -Path <span class="va">$env</span>:USERPROFILE</span>
+            <span id="cb16-9"><a href="#cb16-9"></a></span>
+            <span id="cb16-10"><a href="#cb16-10"></a><span class="va">$profile_path</span> = <span class="va">$env</span>:USERPROFILE -replace <span class="st">&quot;\\&quot;</span>, <span class="st">&quot;/&quot;</span></span>
+            <span id="cb16-11"><a href="#cb16-11"></a></span>
+            <span id="cb16-12"><a href="#cb16-12"></a><span class="fu">Write-Host</span> <span class="st">&quot;INFO: Checking $profile_path/.ssh/id_rsa&quot;</span> -ForegroundColor Cyan</span>
+            <span id="cb16-13"><a href="#cb16-13"></a></span>
+            <span id="cb16-14"><a href="#cb16-14"></a><span class="kw">if</span> (-not (<span class="fu">Test-Path</span> -Path <span class="st">&quot;./.ssh/id_rsa&quot;</span>)){</span>
+            <span id="cb16-15"><a href="#cb16-15"></a>    <span class="kw">if</span> (-not (<span class="fu">Test-Path</span> -Path <span class="st">&quot;./.ssh&quot;</span>)){</span>
+            <span id="cb16-16"><a href="#cb16-16"></a>        <span class="fu">New-Item</span> -Path <span class="st">&quot;./&quot;</span> -Name .<span class="fu">ssh</span> -ItemType Directory -Force</span>
+            <span id="cb16-17"><a href="#cb16-17"></a>        <span class="fu">Write-Host</span> <span class="st">&quot;INFO: $profile_path/.ssh directory&quot;</span> -ForegroundColor Cyan</span>
+            <span id="cb16-18"><a href="#cb16-18"></a>    }</span>
+            <span id="cb16-19"><a href="#cb16-19"></a>    ssh-keygen.<span class="fu">exe</span> -t rsa -b 4096 -N &#39;<span class="st">&quot;&quot;</span>&#39; -f <span class="st">&quot;./.ssh/id_rsa&quot;</span> </span>
+            <span id="cb16-20"><a href="#cb16-20"></a>    <span class="fu">Write-Host</span> <span class="st">&quot;INFO: Generated $profile_path/.ssh/id_rsa file&quot;</span> `</span>
+            <span id="cb16-21"><a href="#cb16-21"></a>        -ForegroundColor Cyan</span>
+            <span id="cb16-22"><a href="#cb16-22"></a>} <span class="kw">else</span> {</span>
+            <span id="cb16-23"><a href="#cb16-23"></a>    <span class="fu">Write-Host</span> <span class="st">&quot;INFO: $profile_path/.ssh/id_rsa file already exists, skipping ...&quot;</span> `</span>
+            <span id="cb16-24"><a href="#cb16-24"></a>        -ForegroundColor Cyan</span>
+            <span id="cb16-25"><a href="#cb16-25"></a>}</span>
+            <span id="cb16-26"><a href="#cb16-26"></a></span>
+            <span id="cb16-27"><a href="#cb16-27"></a><span class="va">$id_rsa_location</span> = <span class="st">&quot;$profile_path/.ssh/id_rsa&quot;</span></span>
+            <span id="cb16-28"><a href="#cb16-28"></a><span class="va">$remote_ssh_server_login</span> = <span class="st">&quot;$User@$Computer&quot;</span></span>
+            <span id="cb16-29"><a href="#cb16-29"></a></span>
+            <span id="cb16-30"><a href="#cb16-30"></a><span class="fu">Write-Host</span> <span class="st">&quot;INFO: Copying $profile_path/.ssh/id_rsa.pub to $Computer,</span></span>
+            <span id="cb16-31"><a href="#cb16-31"></a>    <span class="fu">Type</span> password<span class="st">&quot;  -ForegroundColor Cyan</span></span>
+            <span id="cb16-32"><a href="#cb16-32"></a></span>
+            <span id="cb16-33"><a href="#cb16-33"></a>scp.<span class="fu">exe</span> -o &#39;StrictHostKeyChecking no&#39; <span class="st">&quot;$id_rsa_location.pub&quot;</span></span>
+            <span id="cb16-34"><a href="#cb16-34"></a>    <span class="st">&quot;${remote_ssh_server_login}:~/tmp.pub&quot;</span></span>
+            <span id="cb16-35"><a href="#cb16-35"></a><span class="fu">Write-Host</span> <span class="st">&quot;INFO: Updating authorized_keys on $Computer, Type password</span><span class="ch">`n</span><span class="st">&quot;</span> `</span>
+            <span id="cb16-36"><a href="#cb16-36"></a>    -ForegroundColor Cyan</span>
+            <span id="cb16-37"><a href="#cb16-37"></a>ssh.<span class="fu">exe</span> <span class="st">&quot;$remote_ssh_server_login&quot;</span> <span class="st">&quot;mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; cat ~/tmp.</span></span>
+            <span id="cb16-38"><a href="#cb16-38"></a>pub &gt;&gt; ~/.<span class="fu">ssh</span>/authorized_keys &amp;&amp; chmod 600 ~/.<span class="fu">ssh</span>/authorized_keys &amp;&amp; <span class="fu">rm</span> -f ~/tmp.<span class="fu">pub</span><span class="st">&quot;</span></span>
+            <span id="cb16-39"><a href="#cb16-39"></a></span>
+            <span id="cb16-40"><a href="#cb16-40"></a><span class="fu">Set-Location</span> -Path <span class="va">$old_location</span></span>
+            <span id="cb16-41"><a href="#cb16-41"></a></span>
+            <span id="cb16-42"><a href="#cb16-42"></a><span class="fu">Write-Host</span> <span class="st">&quot;INFO: Thy SSH $Computer Now it will not prompt for password&quot;</span></span>
+            <span id="cb16-43"><a href="#cb16-43"></a>    -ForegroundColor Green</span></code></pre></div>
             <h2 id="remote-wsl">Remote WSL</h2>
-            <p>To run WSL from VSCode install <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote - WSL</a>.</p>
+            <p>To run WSL from VSCode install <a href title="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote - WSL</a>.</p>
             <p>Once installed to make things more readable we can install <a href="https://github.com/ohmybash/oh-my-bash">oh-my-bash</a>. To change the highlighting the easiest method is to use the <a href="https://geoff.greer.fm/lscolors/">LS_Colors Generator</a> by Geoff Greer.</p>
-            <p>Once your colors have been decided we set them by changing <code>LS_COLORS</code> variable in our .bashrc,</p>
-            <div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1"></a><span class="bu">export</span> <span class="va">LS_COLORS=</span><span class="st">&quot;di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=1;32;1:ow=33</span></span></code></pre></div>
+            <p>Once your colours have been decided we set them by changing <code>LS_COLORS</code> variable in our .bashrc,</p>
+            <div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1"></a><span class="bu">export</span> <span class="va">LS_COLORS=</span><span class="st">&quot;di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;</span></span>
+            <span id="cb17-2"><a href="#cb17-2"></a><span class="st">    41:sg=30;46:tw=1;32;1:ow=33&quot;</span></span></code></pre></div>
             </div>
     </div>
   </div>
