@@ -17,8 +17,8 @@ computer, taken from [Virtual Geek](http://vcloud-lab.com/entries/devops/How-to-
 
 ```powershell
 param(
-[string]$Computer="spartan.hpc.unimelb.edu.au",
-[string]$User="cmamon"
+[string]$Computer="******",
+[string]$User="*****"
 )
 
 $old_location = Get-Location
